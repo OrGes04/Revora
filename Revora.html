@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Revora</title>
+    <title>Revora — Time To Train!</title>
+    <meta
+      name="description"
+      content="Revora is a modern gym with expert trainers, top-tier equipment and flexible memberships. Join the best fitness community from 49€/month."
+    />
+    <meta name="theme-color" content="#4100f5" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" type="x-icon" href="REVORA Icon.svg" />
+    <link rel="icon" type="image/svg+xml" href="REVORA Icon.svg" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,760 +28,947 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
   </head>
 
   <body>
-    <nav>
-      <a href="Revora.html"><img src="REVORA LOGO 2.svg" /></a>
-      <ul>
+    <nav aria-label="Main">
+      <a href="#home" class="logo"><img src="REVORA LOGO 2.svg" alt="Revora" /></a>
+      <button
+        type="button"
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="menu"
+        aria-label="Open menu"
+      >
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <ul id="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#program">Program</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#product">Products</a></li>
         <li><a href="#membership">Membership</a></li>
         <li><a href="#contact">Contact</a></li>
-        <button>Join Us</button>
+        <li><button type="button">Join Us</button></li>
       </ul>
     </nav>
-    <div class="hero" id="home">
-      <div class="herotxt">
-        <h1>Time To <br /><span>Train!</span></h1>
-        <p>
-          Unlock your potential with expert trainers and top-tier equipment.
-          Whether building strength or transforming your body, we have
-          everything you need to reach your goals.
-        </p>
-        <button class="btn">Join Us</button
-        ><button class="btn2">99€/Month</button>
-        <div class="pfps">
-          <img src="Foto/Pfp 1.jpg" alt="" class="pfp1" />
-          <img src="Foto/Pfp 2.jpg" alt="" class="pfp2" />
-          <img src="Foto/Pfp 3.jpg" alt="" class="pfp3" />
-          <div class="pfptxt">
-            <h1>And 1000+ More. Join the Best Community!</h1>
-          </div>
-        </div>
-        <div class="brands">
-          <img src="Foto/Adidas.png" alt="" />
-          <img src="Foto/Nike.png" alt="" />
-          <img src="Foto/Puma.png" alt="" />
-          <img src="Foto/Under Armour.svg" alt="" />
-          <img src="Foto/Reebok logo.webp" alt="" />
-        </div>
-      </div>
-      <div class="rate">
-        <img src="Foto/Profile 1.jpg" alt="" />
-        <div class="star">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-      </div>
-      <div class="rate2">
-        <img src="Foto/Profile 2.jpg" alt="" />
-        <div class="star">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-      </div>
-      <div class="rate3">
-        <img src="Foto/Profile 3.jpg" alt="" />
-        <div class="star">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star-half-stroke"></i>
-        </div>
-      </div>
-      <div class="heroft">
-        <img class="heroft" src="Foto/Testimonial 1.jpg" alt="" />
-      </div>
-    </div>
-    <div class="stat">
-      <div class="hrstat1">
-        <h1>1000+ Satisfied Members</h1>
-      </div>
-      <div class="hrstat2">
-        <h1>500+ Active Classes Weekly</h1>
-      </div>
-      <div class="hrstat1">
-        <h1>24/7 Access To Our Facilities</h1>
-      </div>
-    </div>
-    <div class="program" id="program">
-      <div class="prgheader">
-        <h1>Our Program</h1>
-      </div>
-      <div class="tabelat">
-        <div class="prgtable">
-          <h1>Strength 360</h1>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="herotxt">
+          <h1>Time To <br /><span>Train!</span></h1>
           <p>
-            A comprehensive program designed to build muscle and improve
-            strength with a full-body approach. Combining weightlifting, and
-            functional exercises.
+            Unlock your potential with expert trainers and top-tier equipment.
+            Whether building strength or transforming your body, we have
+            everything you need to reach your goals.
           </p>
-          <div class="time">
-            <img src="Time.svg" alt="" />
-            <p>6 weeks</p>
+          <div class="herobtns">
+            <button type="button" class="btn">Join Us</button
+            ><button type="button" class="btn2">99€/Month</button>
           </div>
-          <div class="goal">
-            <img src="Trophy.svg" alt="" />
+          <div class="pfps">
+            <img src="Foto/Pfp 1.webp" alt="" class="pfp1" loading="lazy" />
+            <img src="Foto/Pfp 2.webp" alt="" class="pfp2" loading="lazy" />
+            <img src="Foto/Pfp 3.webp" alt="" class="pfp3" loading="lazy" />
+            <p class="pfptxt">And 1000+ More. Join the Best Community!</p>
+          </div>
+          <div class="brands">
+            <img src="Foto/Adidas.png" alt="Adidas" loading="lazy" />
+            <img src="Foto/Nike.png" alt="Nike" loading="lazy" />
+            <img src="Foto/Puma.png" alt="Puma" loading="lazy" />
+            <img src="Foto/Under Armour.svg" alt="Under Armour" loading="lazy" />
+            <img src="Foto/Reebok logo.webp" alt="Reebok" loading="lazy" />
+          </div>
+        </div>
+        <div class="heroviz">
+          <div class="heroft">
+            <img
+              src="Foto/Testimonial 1.webp"
+              alt="Tattooed man in a dark studio curling a dumbbell"
+              decoding="async"
+            />
+          </div>
+          <div class="rate">
+            <img src="Foto/Profile 1.webp" alt="" loading="lazy" />
+            <div class="star" role="img" aria-label="Rated 4 out of 5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-regular fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="rate2">
+            <img src="Foto/Profile 2.webp" alt="" loading="lazy" />
+            <div class="star" role="img" aria-label="Rated 5 out of 5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="rate3">
+            <img src="Foto/Profile 3.webp" alt="" loading="lazy" />
+            <div class="star" role="img" aria-label="Rated 4.5 out of 5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-regular fa-star-half-stroke" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="stat">
+        <div class="hrstat1">
+          <p><span class="num">1000+</span> <span class="lbl">Satisfied Members</span></p>
+        </div>
+        <div class="hrstat2">
+          <p><span class="num">500+</span> <span class="lbl">Active Classes Weekly</span></p>
+        </div>
+        <div class="hrstat1">
+          <p><span class="num">24/7</span> <span class="lbl">Access To Our Facilities</span></p>
+        </div>
+      </div>
+
+      <section class="program" id="program" aria-labelledby="program-title">
+        <div class="prgheader">
+          <h2 id="program-title">Our Program</h2>
+        </div>
+        <div class="tabelat">
+          <article class="prgtable">
+            <h3>Strength 360</h3>
             <p>
-              Gain muscle, increase strength, and improve overall body
-              composition.
+              A comprehensive program designed to build muscle and improve
+              strength with a full-body approach. Combining weightlifting and
+              functional exercises.
+            </p>
+            <div class="time">
+              <img src="Time.svg" alt="" />
+              <p>6 weeks</p>
+            </div>
+            <div class="goal">
+              <img src="Trophy.svg" alt="" />
+              <p>
+                Gain muscle, increase strength, and improve overall body
+                composition.
+              </p>
+            </div>
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+          </article>
+          <article class="prgtable2">
+            <h3>Fit <br />&amp; Fast</h3>
+            <p>
+              A high-intensity interval training (HIIT) program focused on
+              improving cardiovascular health. Short but intense sessions to
+              push your limits.
+            </p>
+            <div class="time">
+              <img src="Time 2.svg" alt="" />
+              <p>4 weeks</p>
+            </div>
+            <div class="goal">
+              <img src="Trophy 2.svg" alt="" />
+              <p>Fat loss, improved stamina, and cardiovascular health.</p>
+            </div>
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+          </article>
+          <article class="prgtable">
+            <h3>Body Sculpt</h3>
+            <p>
+              A dynamic mix of cardio, strength training, and mobility
+              exercises. Target key muscle groups to tone, tighten, and improve
+              flexibility.
+            </p>
+            <div class="time">
+              <img src="Time.svg" alt="" />
+              <p>8 weeks</p>
+            </div>
+            <div class="goal">
+              <img src="Trophy.svg" alt="" />
+              <p>Achieve a toned and lean physique with enhanced flexibility.</p>
+            </div>
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+          </article>
+          <article class="prgtable2">
+            <h3>Core Power</h3>
+            <p>
+              A specialized program focusing on core strength and stability.
+              Incorporates pilates, resistance exercises, and balance drills to
+              build a solid core.
+            </p>
+            <div class="time">
+              <img src="Time 2.svg" alt="" />
+              <p>4 weeks</p>
+            </div>
+            <div class="goal">
+              <img src="Trophy 2.svg" alt="" />
+              <p>
+                Strengthen core muscles, improve posture, and enhance overall
+                stability.
+              </p>
+            </div>
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+          </article>
+        </div>
+      </section>
+
+      <section class="aboutus" id="about" aria-labelledby="about-title">
+        <div class="aboutvis">
+          <div class="aboutft">
+            <img
+              class="aboutimg"
+              src="Foto/About 1.webp"
+              alt="A man and a woman doing lunges together in a gym"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="aboutpfps">
+            <div class="aboutfaces">
+              <img src="Foto/About pfp.webp" alt="" class="aboutpfp1" loading="lazy" />
+              <img src="Foto/About pfp2.webp" alt="" class="aboutpfp2" loading="lazy" />
+              <img src="Foto/About pfp3.webp" alt="" class="aboutpfp3" loading="lazy" />
+              <img src="Foto/About pfp4.webp" alt="" class="aboutpfp4" loading="lazy" />
+              <img src="Foto/About pfp5.webp" alt="" class="aboutpfp5" loading="lazy" />
+              <img src="Foto/About pfp6.webp" alt="" class="aboutpfp6" loading="lazy" />
+            </div>
+            <p class="pfptekst">
+              And <strong>Thousands</strong> More. Join the Best
+              <strong>Community!</strong>
             </p>
           </div>
-          <i class="fa-solid fa-bolt"></i>
         </div>
-        <div class="prgtable2">
-          <h1>Fit <br />& Fast</h1>
+        <div class="aboutxt">
+          <h2 id="about-title">Join the <br /><span>Movement!</span></h2>
           <p>
-            A high-intensity interval training (HIIT) program focused on
-            improving cardiovascular health. Short but intense sessions to push
-            your limits.
+            At Revora, we empower individuals to achieve their fitness goals in
+            a welcoming and supportive environment. Our state-of-the-art
+            facility offers a variety of equipment and classes for all fitness
+            levels. With a passionate team of certified trainers, we provide
+            personalized guidance to help you thrive. Join our community and
+            discover the strength within you!
           </p>
-          <div class="time">
-            <img src="Time 2.svg" alt="" />
-            <p>4 weeks</p>
+          <div class="allicon">
+            <div class="abouticon">
+              <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+              <h3>Strength Training</h3>
+            </div>
+            <div class="aboutdivider"></div>
+            <div class="abouticon">
+              <i class="fa-solid fa-person-running" aria-hidden="true"></i>
+              <h3>Weight Loss</h3>
+            </div>
+            <div class="aboutdivider"></div>
+            <div class="abouticon">
+              <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+              <h3>Health Improvement</h3>
+            </div>
           </div>
-          <div class="goal">
-            <img src="Trophy 2.svg" alt="" />
-            <p>Fat loss, improved stamina, and cardiovascular health.</p>
+          <div class="butonat">
+            <button type="button" class="aboutbtn">Read More</button>
+            <button type="button" class="aboutbtn2">Join Us</button>
           </div>
-          <i class="fa-solid fa-bolt"></i>
         </div>
-        <div class="prgtable">
-          <h1>Body Sculpt</h1>
-          <p>
-            A dynamic mix of cardio, strength training, and mobility exercises.
-            Target key muscle groups to tone, tighten, and improve flexibility.
-          </p>
-          <div class="time">
-            <img src="Time.svg" alt="" />
-            <p>8 weeks</p>
+      </section>
+
+      <section class="productsec" id="product" aria-labelledby="product-title">
+        <div class="proheader">
+          <div class="promajt">
+            <h2 id="product-title">Products</h2>
+            <select class="proheadbtn2" name="category" aria-label="Product category">
+              <option value="1">Popular</option>
+              <option value="2">Strength Training</option>
+              <option value="3">Cardio Training</option>
+              <option value="4">Balance Trainers</option>
+              <option value="5">Clothing</option>
+              <option value="6">Yoga</option>
+            </select>
           </div>
-          <div class="goal">
-            <img src="Trophy.svg" alt="" />
-            <p>Achieve a toned and lean physique with enhanced flexibility.</p>
-          </div>
-          <i class="fa-solid fa-bolt"></i>
         </div>
-        <div class="prgtable2">
-          <h1>Core Power</h1>
-          <p>
-            A specialized program focusing on core strength and stability.
-            Incorporates pilates, resistance exercises, and balance drills to
-            build a solid core.
-          </p>
-          <div class="time">
-            <img src="Time 2.svg" alt="" />
-            <p>4 weeks</p>
+        <div class="progrid">
+          <article class="procard">
+            <div class="proimazh">
+              <img src="Foto/Product 1.webp" alt="Black dumbbell" loading="lazy" decoding="async" />
+              <p class="proprice">24.99€</p>
+            </div>
+            <div class="probody">
+              <h3>Dumbbell</h3>
+              <div class="butonprod">
+                <button type="button" class="probtn">Buy Now</button>
+                <button type="button" class="probtn2" aria-label="Add Dumbbell to cart" title="Add to cart">
+                  <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="procard">
+            <div class="proimazh">
+              <img src="Foto/Product 2.webp" alt="Three resistance bands in blue, green and red" loading="lazy" decoding="async" />
+              <p class="proprice">8.99€</p>
+            </div>
+            <div class="probody">
+              <h3>Resistance Band</h3>
+              <div class="butonprod">
+                <button type="button" class="probtn">Buy Now</button>
+                <button type="button" class="probtn2" aria-label="Add Resistance Band to cart" title="Add to cart">
+                  <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="procard">
+            <div class="proimazh">
+              <img src="Foto/Product 3.webp" alt="Black kettlebell" loading="lazy" decoding="async" />
+              <p class="proprice">34.99€</p>
+            </div>
+            <div class="probody">
+              <h3>Kettlebell</h3>
+              <div class="butonprod">
+                <button type="button" class="probtn">Buy Now</button>
+                <button type="button" class="probtn2" aria-label="Add Kettlebell to cart" title="Add to cart">
+                  <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="procard">
+            <div class="proimazh">
+              <img src="Foto/Product 4.webp" alt="Elliptical cross trainer" loading="lazy" decoding="async" />
+              <p class="proprice">1,299.99€</p>
+            </div>
+            <div class="probody">
+              <h3>Elliptical</h3>
+              <div class="butonprod">
+                <button type="button" class="probtn">Buy Now</button>
+                <button type="button" class="probtn2" aria-label="Add Elliptical to cart" title="Add to cart">
+                  <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="procard">
+            <div class="proimazh">
+              <img src="Foto/Product 5.webp" alt="Black foam roller" loading="lazy" decoding="async" />
+              <p class="proprice">13.99€</p>
+            </div>
+            <div class="probody">
+              <h3>Foam Roller</h3>
+              <div class="butonprod">
+                <button type="button" class="probtn">Buy Now</button>
+                <button type="button" class="probtn2" aria-label="Add Foam Roller to cart" title="Add to cart">
+                  <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="procard">
+            <div class="proimazh">
+              <img src="Foto/Product 6.webp" alt="Black long-sleeve gym shirt" loading="lazy" decoding="async" />
+              <p class="proprice">29.99€</p>
+            </div>
+            <div class="probody">
+              <h3>Gym Shirt</h3>
+              <div class="butonprod">
+                <button type="button" class="probtn">Buy Now</button>
+                <button type="button" class="probtn2" aria-label="Add Gym Shirt to cart" title="Add to cart">
+                  <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="procard">
+            <div class="proimazh">
+              <img src="Foto/Product 7.webp" alt="Treadmill with a display console" loading="lazy" decoding="async" />
+              <p class="proprice">799.99€</p>
+            </div>
+            <div class="probody">
+              <h3>Treadmill</h3>
+              <div class="butonprod">
+                <button type="button" class="probtn">Buy Now</button>
+                <button type="button" class="probtn2" aria-label="Add Treadmill to cart" title="Add to cart">
+                  <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="procard">
+            <div class="proimazh">
+              <img src="Foto/Product 8.webp" alt="Adjustable weight bench" loading="lazy" decoding="async" />
+              <p class="proprice">89.99€</p>
+            </div>
+            <div class="probody">
+              <h3>Weight Bench</h3>
+              <div class="butonprod">
+                <button type="button" class="probtn">Buy Now</button>
+                <button type="button" class="probtn2" aria-label="Add Weight Bench to cart" title="Add to cart">
+                  <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      <button type="button" class="proheadbtn">See More</button>
+      </section>
+
+      <section class="trainersec" id="trainers" aria-labelledby="trainers-title">
+        <div class="trainerhead">
+          <h2 id="trainers-title">Meet Our <br />Exceptional <span>Trainers</span></h2>
+        </div>
+        <div class="trainergrid">
+          <article class="trainercard">
+            <h3>Hector <br />Piers</h3>
+            <img
+              src="Foto/Trainer 1.webp"
+              alt="Hector Piers smiling and flexing both arms"
+              loading="lazy"
+              decoding="async"
+            />
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+          </article>
+          <article class="trainercard2">
+            <h3>Jane <br />Adkins</h3>
+            <img
+              src="Foto/Trainer 2.webp"
+              alt="Jane Adkins holding a resistance band across her chest"
+              loading="lazy"
+              decoding="async"
+            />
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+          </article>
+          <article class="trainercard2">
+            <h3>Judy <br />Carson</h3>
+            <img
+              src="Foto/Trainer 3.webp"
+              alt="Judy Carson smiling and holding a trophy"
+              loading="lazy"
+              decoding="async"
+            />
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+          </article>
+          <article class="trainercard4">
+            <h3>Eric <br />Hogan</h3>
+            <img
+              src="Foto/Trianer 4.webp"
+              alt="Eric Hogan lifting a dumbbell"
+              loading="lazy"
+              decoding="async"
+            />
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+          </article>
+        </div>
+        <div class="circles" aria-hidden="true">
+          <div class="circle1"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </section>
+
+      <section class="fullsec" aria-labelledby="community-title">
+        <div class="fullflex">
+          <div class="fleximg">
+            <img class="fotoni" src="Foto/Full 2.webp" alt="Woman cheering with both arms raised" loading="lazy" decoding="async" />
+            <img class="fotody" src="Foto/Full 1.webp" alt="Man flexing his arms" loading="lazy" decoding="async" />
           </div>
-          <div class="goal">
-            <img src="Trophy 2.svg" alt="" />
+          <div class="flextext">
+            <h2 id="community-title">
+              Join the Best<br />
+              <span>Gym Community!</span>
+            </h2>
+            <ul class="fullcategory">
+              <li>Bodybuilding</li>
+              <li>Yoga</li>
+              <li>Cardio Training</li>
+              <li>Weight Loss</li>
+              <li>Personal Training</li>
+            </ul>
+            <form action="#">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                aria-label="Your email"
+                autocomplete="email"
+              />
+              <button type="submit" class="aboutbtn2">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="customersec" aria-labelledby="testimonials-title">
+        <div class="customhead">
+          <h2 id="testimonials-title">Testimonials</h2>
+          <div class="arrow" aria-hidden="true">
+            <i class="fa-solid fa-chevron-left"></i>
+            <div class="divider"></div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="customerall">
+          <article class="customtable">
+            <div class="tableup">
+              <img src="Foto/Testimonial 1.webp" alt="" loading="lazy" />
+              <div class="tablename">
+                <h3>Steve Porter</h3>
+                <div class="star" role="img" aria-label="Rated 5 out of 5 stars">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="quote" aria-hidden="true">
+              <i class="fa-solid fa-quote-left"></i
+              ><i class="fa-solid fa-quote-right"></i>
+            </div>
             <p>
-              Strengthen core muscles, improve posture, and enhance overall
-              stability.
+              Joining this gym has been life-changing! The trainers are
+              incredibly supportive, and the community keeps me motivated. I've
+              reached goals I never thought possible—couldn’t ask for a better
+              place to train!
             </p>
-          </div>
-          <i class="fa-solid fa-bolt"></i>
+          </article>
+          <article class="customtable">
+            <div class="tableup">
+              <img src="Foto/Testimonial 2.webp" alt="" loading="lazy" />
+              <div class="tablename">
+                <h3>Lauren Hibbert</h3>
+                <div class="star" role="img" aria-label="Rated 4 out of 5 stars">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-regular fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="quote" aria-hidden="true">
+              <i class="fa-solid fa-quote-left"></i
+              ><i class="fa-solid fa-quote-right"></i>
+            </div>
+            <p>
+              Joining this gym has been a life-changing experience! The
+              facilities are top-notch, and the trainers are always supportive.
+              I feel healthier and more confident every day. Highly recommended
+              for anyone serious about fitness!
+            </p>
+          </article>
+          <article class="customtable">
+            <div class="tableup">
+              <img src="Foto/Testimonial 3.webp" alt="" loading="lazy" />
+              <div class="tablename">
+                <h3>Luke Browne</h3>
+                <div class="star" role="img" aria-label="Rated 4.5 out of 5 stars">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-regular fa-star-half-stroke" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="quote" aria-hidden="true">
+              <i class="fa-solid fa-quote-left"></i
+              ><i class="fa-solid fa-quote-right"></i>
+            </div>
+            <p>
+              I’ve tried many gyms, but this one stands out. The atmosphere is
+              motivating, and the staff truly cares about your progress. I've
+              achieved more here in a few months than I did in years elsewhere.
+              Great place to train!
+            </p>
+          </article>
         </div>
-      </div>
-    </div>
-    <div class="aboutus" id="about">
-      <div class="aboutpfps">
-        <img src="Foto/About pfp.jpg" alt="" class="aboutpfp1" />
-        <img src="Foto/About pfp2.jpg" alt="" class="aboutpfp2" />
-        <img src="Foto/About pfp3.jpg" alt="" class="aboutpfp3" />
-        <img src="Foto/About pfp4.jpg" alt="" class="aboutpfp4" />
-        <img src="Foto/About pfp5.jpg" alt="" class="aboutpfp5" />
-        <img src="Foto/About pfp6.jpg" alt="" class="aboutpfp6" />
-        <div class="pfptekst">
-          <h1>
-            And <strong>Thousands</strong> More. Join the Best
-            <strong>Community!</strong>
-          </h1>
+      </section>
+
+      <section class="membershipsec" id="membership" aria-labelledby="membership-title">
+        <div class="memberhead">
+          <h2 id="membership-title">Membership</h2>
         </div>
-      </div>
-      <div class="aboutft">
-        <img class="aboutimg" src="Foto/About 1.jpg" alt="" />
-      </div>
-      <div class="aboutxt">
-        <h1>Join the <br /><span>Movement!</span></h1>
-        <p>
-          At Revora, we empower individuals to achieve their fitness goals in a
-          welcoming and supportive environment. Our state-of-the-art facility
-          offers a variety of equipment and classes for all fitness levels. With
-          a passionate team of certified trainers, we provide personalized
-          guidance to help you thrive. Join our community and discover the
-          strength within you!
-        </p>
-        <div class="allicon">
-          <div class="abouticon">
-            <i class="fa-solid fa-dumbbell"></i>
-            <h1>Strength Training</h1>
-          </div>
-          <div class="aboutdivider"></div>
-          <div class="abouticon">
-            <i class="fa-solid fa-person-running"></i>
-            <h1>Weight Loss</h1>
-          </div>
-          <div class="aboutdivider"></div>
-          <div class="abouticon">
-            <i class="fa-solid fa-heart-pulse"></i>
-            <h1>Health Improvement</h1>
-          </div>
+        <div class="membertable">
+          <article class="membercard">
+            <div class="cardtop">
+              <h3>Basic</h3>
+              <p class="price">49€</p>
+              <div class="memdivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Access to gym equipment</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Locker room access</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Free Wi-Fi</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>1 complimentary fitness consultation</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Weekdays only (6 AM - 5 PM)</p>
+              </div>
+            </div>
+            <div class="membutonat">
+              <button type="button" class="membtn">Get Started</button>
+              <button type="button" class="membtn2">Learn More</button>
+            </div>
+          </article>
+          <article class="membercard2">
+            <div class="cardtop">
+              <h3>Pro</h3>
+              <p class="price">99€</p>
+              <div class="memdivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Full access to gym equipment</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Locker room access</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Free Wi-Fi</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>3 complimentary personal training sessions</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Access to group classes (Yoga, HIIT, Pilates)</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>
+                  10% discount on gym products (dumbbells, protein shakes, etc.)
+                </p>
+              </div>
+            </div>
+            <div class="membutonat">
+              <button type="button" class="membtncard2">Get Started</button>
+              <button type="button" class="membtn2">Learn More</button>
+            </div>
+          </article>
+          <article class="membercard">
+            <div class="cardtop">
+              <h3>Elite</h3>
+              <p class="price">119€</p>
+              <div class="memdivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>24/7 access to all facilities</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Premium locker with personal locker storage</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Free Wi-Fi</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Unlimited personal training sessions</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Access to all group classes and exclusive workshops</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Free guest pass (1 guest per month)</p>
+              </div>
+              <div class="featuredivide"></div>
+              <div class="feature">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>20% discount on gym products and café</p>
+              </div>
+            </div>
+            <div class="membutonat">
+              <button type="button" class="membtn">Get Started</button>
+              <button type="button" class="membtn2">Learn More</button>
+            </div>
+          </article>
         </div>
-        <div class="butonat">
-          <button class="aboutbtn">Read More</button>
-          <button class="aboutbtn2">Join Us</button>
+      </section>
+
+      <section class="contactsec" id="contact" aria-labelledby="contact-title">
+        <div class="contacthead">
+          <h2 id="contact-title">Contact <span>Us</span></h2>
         </div>
-      </div>
-    </div>
-    <div class="productsec" id="product">
-      <div class="proheader">
-        <div class="promajt">
-          <h1>Products</h1>
-          <select class="proheadbtn2" name="" id="">
-            <option value="1">Popular</option>
-            <option value="2">Strength Training</option>
-            <option value="3">Cardio Training</option>
-            <option value="4">Balance Trainers</option>
-            <option value="5">Clothing</option>
-            <option value="6">Yoga</option>
-          </select>
-        </div>
-        <button class="proheadbtn">See More</button>
-      </div>
-      <div class="progrid">
-        <div class="procard">
-          <div class="proimazh">
-            <img src="Foto/Product 1.png" alt="" />
-          </div>
-          <h1>Dumbbell</h1>
-          <h3>24.99€</h3>
-          <div class="butonprod">
-            <button class="probtn">Buy Now</button>
-            <button class="probtn2">
-              <i class="fa-solid fa-basket-shopping"></i>
-              Add to Cart
-            </button>
-          </div>
-        </div>
-        <div class="procard">
-          <div class="proimazh">
-            <img src="Foto/Product 2.png" alt="" />
-          </div>
-          <h1>Resistance Band</h1>
-          <h3>8.99€</h3>
-          <div class="butonprod">
-            <button class="probtn">Buy Now</button>
-            <button class="probtn2">
-              <i class="fa-solid fa-basket-shopping"></i>
-              Add to Cart
-            </button>
-          </div>
-        </div>
-        <div class="procard">
-          <div class="proimazh">
-            <img src="Foto/Product 3.png" alt="" />
-          </div>
-          <h1>Kettleball</h1>
-          <h3>34.99€</h3>
-          <div class="butonprod">
-            <button class="probtn">Buy Now</button>
-            <button class="probtn2">
-              <i class="fa-solid fa-basket-shopping"></i>
-              Add to Cart
-            </button>
-          </div>
-        </div>
-        <div class="procard">
-          <div class="proimazh">
-            <img src="Foto/Product 4.webp" alt="" />
-          </div>
-          <h1>Elliptical</h1>
-          <h3>1,299.99€</h3>
-          <div class="butonprod">
-            <button class="probtn">Buy Now</button>
-            <button class="probtn2">
-              <i class="fa-solid fa-basket-shopping"></i>
-              Add to Cart
-            </button>
-          </div>
-        </div>
-        <div class="procard">
-          <div class="proimazh">
-            <img src="Foto/Product 5.png" alt="" />
-          </div>
-          <h1>Foam Roller</h1>
-          <h3>13.99€</h3>
-          <div class="butonprod">
-            <button class="probtn">Buy Now</button>
-            <button class="probtn2">
-              <i class="fa-solid fa-basket-shopping"></i>
-              Add to Cart
-            </button>
-          </div>
-        </div>
-        <div class="procard">
-          <div class="proimazh">
-            <img src="Foto/Product 6.webp" alt="" />
-          </div>
-          <h1>Gym Shirt</h1>
-          <h3>29.99€</h3>
-          <div class="butonprod">
-            <button class="probtn">Buy Now</button>
-            <button class="probtn2">
-              <i class="fa-solid fa-basket-shopping"></i>
-              Add to Cart
-            </button>
-          </div>
-        </div>
-        <div class="procard">
-          <div class="proimazh">
-            <img src="Foto/Product 7.png" alt="" />
-          </div>
-          <h1>Treadmill</h1>
-          <h3>799.99€</h3>
-          <div class="butonprod">
-            <button class="probtn">Buy Now</button>
-            <button class="probtn2">
-              <i class="fa-solid fa-basket-shopping"></i>
-              Add to Cart
-            </button>
-          </div>
-        </div>
-        <div class="procard">
-          <div class="proimazh">
-            <img src="Foto/Product 8.webp" alt="" />
-          </div>
-          <h1>Weight Bench</h1>
-          <h3>89.99€</h3>
-          <div class="butonprod">
-            <button class="probtn">Buy Now</button>
-            <button class="probtn2">
-              <i class="fa-solid fa-basket-shopping"></i>
-              Add to Cart
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="trainersec">
-      <div class="trainerhead">
-        <h1>Meet Our <br />Exceptional <span>Trainers</span></h1>
-      </div>
-      <div class="trainergrid">
-        <div class="trainercard">
-          <h1>Hector <br />Piers</h1>
-          <img src="Foto/Trainer 1.png" alt="" />
-          <i class="fa-solid fa-bolt"></i>
-        </div>
-        <div class="trainercard2">
-          <h1>Jane <br />Adkins</h1>
-          <img src="Foto/Trainer 2.png" alt="" />
-          <i class="fa-solid fa-bolt"></i>
-        </div>
-        <div class="trainercard2">
-          <h1>Judy <br />Carson</h1>
-          <img src="Foto/Trainer 3.png" alt="" />
-          <i class="fa-solid fa-bolt"></i>
-        </div>
-        <div class="trainercard4">
-          <h1>Eric <br />Hogan</h1>
-          <img src="Foto/Trianer 4.png" alt="" />
-          <i class="fa-solid fa-bolt"></i>
-        </div>
-      </div>
-      <div class="circles">
-        <div class="circle1"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
-    </div>
-    <div class="fullsec">
-      <div class="fullflex">
-        <div class="fleximg">
-          <img class="fotoni" src="Foto/Full 2.png" alt="" />
-          <img class="fotody" src="Foto/Full 1.png" alt="" />
-        </div>
-        <div class="flextext">
-          <h1>
-            Join the Best<br />
-            <span>Gym Community!</span>
-          </h1>
-          <div class="fullcategory">
-            <h1>Bodybuilding</h1>
-            <h1>Yoga</h1>
-            <h1>Cardio Training</h1>
-            <h1>Weight Loss</h1>
-            <h1>Personal Training</h1>
-          </div>
+        <div class="contacttable">
           <form action="#">
-            <input type="email" placeholder="Your Email" />
-            <button type="submit" class="aboutbtn2">Send</button>
+            <div class="emermbi">
+              <div class="emer">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="First Name"
+                  autocomplete="given-name"
+                />
+              </div>
+              <div class="mbiemer">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Last Name"
+                  autocomplete="family-name"
+                />
+              </div>
+            </div>
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="email"
+            />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" class="aboutbtn2">Submit</button>
           </form>
         </div>
-      </div>
-    </div>
-    <div class="customersec">
-      <div class="customhead">
-        <h1>Testimonials</h1>
-        <div class="arrow">
-          <i class="fa-solid fa-chevron-left"></i>
-          <div class="divider"></div>
-          <i class="fa-solid fa-chevron-right"></i>
+      </section>
+
+      <section class="faqsec" aria-labelledby="faq-title">
+        <div class="faqhead">
+          <h2 id="faq-title">Frequently Asked Questions</h2>
         </div>
-      </div>
-      <div class="customerall">
-        <div class="customtable">
-          <div class="tableup">
-            <img src="Foto/Testimonial 1.jpg" alt="" />
-            <div class="tablename">
-              <h1>Steve Porter</h1>
-              <div class="star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+        <div class="faqtab">
+          <ul id="accordion">
+            <li>
+              <h3>
+                <button
+                  type="button"
+                  class="faqq"
+                  id="faq-q1"
+                  aria-expanded="false"
+                  aria-controls="faq-a1"
+                >
+                  What are the gym's opening hours?
+                  <span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+                </button>
+              </h3>
+              <div class="content" id="faq-a1" role="region" aria-labelledby="faq-q1">
+                <p>Our gym is open 24/7 for Premium members. For Basic and Standard members, the hours are Monday to Friday from 6 AM to 10 PM, and weekends from 8 AM to 8 PM.</p>
               </div>
-            </div>
-          </div>
-          <div class="quote">
-            <i class="fa-solid fa-quote-left"></i
-            ><i class="fa-solid fa-quote-right"></i>
-          </div>
-          <p>
-            Joining this gym has been life-changing! The trainers are incredibly
-            supportive, and the community keeps me motivated. I've reached goals
-            I never thought possible—couldn’t ask for a better place to train!
-          </p>
-        </div>
-        <div class="customtable">
-          <div class="tableup">
-            <img src="Foto/Testimonial 2.jpg" alt="" />
-            <div class="tablename">
-              <h1>Lauren Hibbert</h1>
-              <div class="star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+            </li>
+            <li>
+              <h3>
+                <button
+                  type="button"
+                  class="faqq"
+                  id="faq-q2"
+                  aria-expanded="false"
+                  aria-controls="faq-a2"
+                >
+                  Do I need to book a session for group classes?
+                  <span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+                </button>
+              </h3>
+              <div class="content" id="faq-a2" role="region" aria-labelledby="faq-q2">
+                <p>Yes, booking is required to secure your spot in our group classes. You can book classes through our mobile app or at the front desk up to 24 hours in advance.</p>
               </div>
-            </div>
-          </div>
-          <div class="quote">
-            <i class="fa-solid fa-quote-left"></i
-            ><i class="fa-solid fa-quote-right"></i>
-          </div>
-          <p>
-            Joining this gym has been a life-changing experience! The facilities
-            are top-notch, and the trainers are always supportive. I feel
-            healthier and more confident every day. Highly recommended for
-            anyone serious about fitness!
-          </p>
-        </div>
-        <div class="customtable">
-          <div class="tableup">
-            <img src="Foto/Testimonial 3.jpg" alt="" />
-            <div class="tablename">
-              <h1>Luke Browne</h1>
-              <div class="star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star-half-stroke"></i>
+            </li>
+            <li>
+              <h3>
+                <button
+                  type="button"
+                  class="faqq"
+                  id="faq-q3"
+                  aria-expanded="false"
+                  aria-controls="faq-a3"
+                >
+                  Can I bring a guest with me?
+                  <span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+                </button>
+              </h3>
+              <div class="content" id="faq-a3" role="region" aria-labelledby="faq-q3">
+                <p>Premium members can bring one guest per month free of charge. Other membership levels can purchase guest passes at the front desk.</p>
               </div>
-            </div>
-          </div>
-          <div class="quote">
-            <i class="fa-solid fa-quote-left"></i
-            ><i class="fa-solid fa-quote-right"></i>
-          </div>
-          <p>
-            I’ve tried many gyms, but this one stands out. The atmosphere is
-            motivating, and the staff truly cares about your progress. I've
-            achieved more here in a few months than I did in years elsewhere.
-            Great place to train!
-          </p>
+            </li>
+            <li>
+              <h3>
+                <button
+                  type="button"
+                  class="faqq"
+                  id="faq-q4"
+                  aria-expanded="false"
+                  aria-controls="faq-a4"
+                >
+                  Are there personal trainers available?
+                  <span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+                </button>
+              </h3>
+              <div class="content" id="faq-a4" role="region" aria-labelledby="faq-q4">
+                <p>Yes, we have certified personal trainers on staff. Standard members get 3 complimentary sessions, and Premium members have unlimited access to personal training. Additional sessions are available for purchase.</p>
+              </div>
+            </li>
+            <li>
+              <h3>
+                <button
+                  type="button"
+                  class="faqq"
+                  id="faq-q5"
+                  aria-expanded="false"
+                  aria-controls="faq-a5"
+                >
+                  Is there parking available?
+                  <span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+                </button>
+              </h3>
+              <div class="content" id="faq-a5" role="region" aria-labelledby="faq-q5">
+                <p>Yes, we offer free parking for all members. Premium members also have access to reserved parking spots for convenience.</p>
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <div class="membershipsec" id="membership">
-      <div class="memberhead">
-        <h1>Membership</h1>
-      </div>
-      <div class="membertable">
-        <div class="membercard">
-          <div class="cardtop">
-            <h2>Basic</h2>
-            <h1>49€</h1>
-            <div class="memdivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Access to gym equipment</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Locker room access</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Free Wi-Fi</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>1 complimentary fitness consultation</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Weekdays only (6 AM - 5 PM)</p>
-            </div>
-          </div>
-          <div class="membutonat">
-            <button class="membtn">Get Started</button>
-            <button class="membtn2">Learn More</button>
-          </div>
-        </div>
-        <div class="membercard2">
-          <div class="cardtop">
-            <h2>Pro</h2>
-            <h1>99€</h1>
-            <div class="memdivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Full access to gym equipment</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Locker room access</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Free Wi-Fi</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>3 complimentary personal training sessions</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Access to group classes (Yoga, HIIT, Pilates)</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>
-                10% discount on gym products (dumbbells, protein shakes, etc.)
-              </p>
-            </div>
-          </div>
-          <div class="membutonat">
-            <button class="membtncard2">Get Started</button>
-            <button class="membtn2">Learn More</button>
-          </div>
-        </div>
-        <div class="membercard">
-          <div class="cardtop">
-            <h2>Elite</h2>
-            <h1>119€</h1>
-            <div class="memdivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>24/7 access to all facilities</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Premium locker with personal locker storage</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Free Wi-Fi</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Unlimited personal training sessions</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Access to all group classes and exclusive workshops</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Free guest pass (1 guest per month)</p>
-            </div>
-            <div class="featuredivide"></div>
-            <div class="feature">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>20% discount on gym products and café</p>
-            </div>
-          </div>
-          <div class="membutonat">
-            <button class="membtn">Get Started</button>
-            <button class="membtn2">Learn More</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="contactsec" id="contact">
-      <div class="contacthead">
-        <h1>Contact <span>Us</span></h1>
-      </div>
-      <div class="contacttable">
-        <form action="#">
-          <div class="emermbi">
-            <div class="emer">
-              <label for="name">First Name</label>
-              <input type="text" placeholder="First Name" />
-            </div>
-            <div class="mbiemer">
-              <label for="last">Last Name</label>
-              <input type="text" placeholder="Last Name" />
-            </div>
-          </div>
-          <label for="email">Email Address</label>
-          <input type="email" placeholder="Email" />
-          <label for="textarea">Message</label>
-          <textarea name="text" id="" placeholder="Message"></textarea>
-          <button type="submit" class="aboutbtn2">Submit</button>
-        </form>
-      </div>
-    </div>
-    <div class="faqsec">
-      <div class="faqhead">
-        <h1>Frequently Asked Questions</h1>
-      </div>
-      <div class="faqtab">
-        <ul id="accordion">
-          <li>
-            <label for="first"
-              >What are the gym's opening hours?
-              <span><i class="fa-solid fa-chevron-down"></i></span
-            ></label>
-            <input type="radio" name="accordion" id="first" />
-            <div class="content">
-              <p>
-                Our gym is open 24/7 for Premium members. For Basic and Standard
-                members, the hours are Monday to Friday from 6 AM to 10 PM, and
-                weekends from 8 AM to 8 PM.
-              </p>
-            </div>
-          </li>
-          <li>
-            <label for="second"
-              >Do I need to book a session for group classes?
-              <span><i class="fa-solid fa-chevron-down"></i></span
-            ></label>
-            <input type="radio" name="accordion" id="second" />
-            <div class="content">
-              <p>
-                Yes, booking is required to secure your spot in our group
-                classes. You can book classes through our mobile app or at the
-                front desk up to 24 hours in advance.
-              </p>
-            </div>
-          </li>
-          <li>
-            <label for="third"
-              >Can I bring a guest with me?
-              <span><i class="fa-solid fa-chevron-down"></i></span
-            ></label>
-            <input type="radio" name="accordion" id="third" />
-            <div class="content">
-              <p>
-                Premium members can bring one guest per month free of charge.
-                Other membership levels can purchase guest passes at the front
-                desk.
-              </p>
-            </div>
-          </li>
-          <li>
-            <label for="fourth"
-              >Are there personal trainers available?
-              <span><i class="fa-solid fa-chevron-down"></i></span
-            ></label>
-            <input type="radio" name="accordion" id="fourth" />
-            <div class="content">
-              <p>
-                Yes, we have certified personal trainers on staff. Standard
-                members get 3 complimentary sessions, and Premium members have
-                unlimited access to personal training. Additional sessions are
-                available for purchase.
-              </p>
-            </div>
-          </li>
-          <li>
-            <label for="fifth"
-              >Is there parking available?
-              <span><i class="fa-solid fa-chevron-down"></i></span
-            ></label>
-            <input type="radio" name="accordion" id="fifth" />
-            <div class="content">
-              <p>
-                Yes, we offer free parking for all members. Premium members also
-                have access to reserved parking spots for convenience.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+      </section>
+    </main>
+
     <footer>
       <div class="footup">
-        <a href="Revora.html"><img src="REVORA LOGO 2.svg" /></a>
-        <ul>
-          <h1>About</h1>
-          <li><a href="#">Our Story</a></li>
-          <li><a href="#">Achievements</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Career</a></li>
-        </ul>
-        <ul>
-          <h1>Company</h1>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Press</a></li>
-        </ul>
-        <ul>
-          <h1>Socials</h1>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </ul>
+        <a href="#home" class="footlogo"><img src="REVORA LOGO 2.svg" alt="Revora" /></a>
+        <div class="footcol">
+          <h2>About</h2>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+        <div class="footcol">
+          <h2>Company</h2>
+          <ul>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footcol">
+          <h2>Socials</h2>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
       </div>
       <div class="footposht">
         <hr />
         <p>© 2024 Revora. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <script>
+      // Menu
+      (function () {
+        var nav = document.querySelector("nav");
+        var toggle = nav.querySelector(".menu-toggle");
+        var menu = document.getElementById("menu");
+        var icon = toggle.querySelector("i");
+        var narrow = window.matchMedia("(max-width: 900px)");
+
+        function setOpen(open, returnFocus) {
+          nav.classList.toggle("open", open);
+          toggle.setAttribute("aria-expanded", String(open));
+          toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+          icon.className = open ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+          if (!open && returnFocus) toggle.focus();
+        }
+
+        toggle.addEventListener("click", function () {
+          setOpen(!nav.classList.contains("open"));
+        });
+
+        menu.addEventListener("click", function (e) {
+          if (e.target.closest("a")) setOpen(false);
+        });
+
+        nav.addEventListener("click", function (e) {
+          if (e.target === nav) setOpen(false);
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && nav.classList.contains("open")) {
+            setOpen(false, true);
+          }
+        });
+
+        narrow.addEventListener("change", function () {
+          setOpen(false);
+        });
+      })();
+    </script>
+
+    <script>
+      // FAQ accordion
+      (function () {
+        var items = document.querySelectorAll("#accordion li");
+
+        function setOpen(li, open) {
+          var btn = li.querySelector(".faqq");
+          var panel = li.querySelector(".content");
+          li.classList.toggle("open", open);
+          btn.setAttribute("aria-expanded", String(open));
+          panel.style.maxHeight = open ? panel.scrollHeight + "px" : "";
+        }
+
+        items.forEach(function (li) {
+          li.querySelector(".faqq").addEventListener("click", function () {
+            var willOpen = !li.classList.contains("open");
+            items.forEach(function (other) {
+              if (other !== li) setOpen(other, false);
+            });
+            setOpen(li, willOpen);
+          });
+        });
+
+        window.addEventListener("resize", function () {
+          items.forEach(function (li) {
+            if (li.classList.contains("open")) {
+              var panel = li.querySelector(".content");
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
