@@ -78,6 +78,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 100;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -1069,6 +1070,7 @@ option {
   bottom: 19.9cqw;
   z-index: 2;
   width: 104%;
+  height: auto;
   transform: translateX(-50%);
 }
 
@@ -1080,6 +1082,7 @@ option {
   top: -12cqw;
   bottom: auto;
   width: 100%;
+  height: auto;
 }
 
 .trainercard h3,
@@ -1898,6 +1901,7 @@ footer i {
     border-radius: 0;
     border-bottom-color: var(--purple);
     background-color: var(--purple);
+    -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
 
